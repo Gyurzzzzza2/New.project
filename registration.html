@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>* {box-sizing: border-box}
+        body{
+            background-image: url(https://images7.alphacoders.com/129/1299612.png);
+        }
+               
+        /* Add padding to containers */
+        .container {
+          padding: 16px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+                      
+        input[type=number] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: rgba(46, 97, 132, 0.5);
+        }
+
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: rgba(46, 97, 132, 0.5);
+       
+        }
+        
+        input[type=text]:focus, input[type=password]:focus {
+          background-color: white;
+          outline: none;
+          
+        }
+        
+        /* Overwrite default styles of hr */
+        hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+        }
+        
+        /* Set a style for the submit/register button */
+        .registerbtn {
+          
+          background-color: #04AA6D;
+          width: 100%;
+          border: none;
+          cursor: pointer;
+          margin: 8px 0;
+          padding: 16px 20px;
+          color: white;
+          transition-duration: .4s;
+          
+        }
+        
+        .registerbtn:hover {
+          opacity:1;
+        
+        }
+        
+        /* Add a blue text color to links */
+        a {
+          color: dodgerblue;
+        }
+        
+        /* Set a grey background color and center the text of the "sign in" section */
+        .signin {
+          background-color:  rgba(46, 97, 132, 0.5);
+          text-align: center;
+        }
+
+        button:active {
+          transform: scale(.9);
+        }
+        
+        input[type=textarea]{
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background-color: rgba(46, 97, 132, 0.5);  
+        }
+         
+        input[type=textarea]:focus {
+          background-color: white;
+          outline: none;
+        }
+
+        input[type=number]:focus{
+          background-color: white;
+          outline: none;
+        }
+                
+    </style>
+     
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+          
+          
+          <h1 style="color: white;">Register:</h1>
+          <p style="color: white;">Please fill in this form to create an account.</p>
+          <hr>
+      
+          <label for="email" style="color: white;"><b>Email:</b></label>
+          <div class="container1"><input type="text" placeholder="Enter Email" name="email" id="email" required></div>
+
+      
+          <label for="psw" style="color: white;"><b>Password:</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      
+          <label for="psw-repeat" style="color: white;"><b>Repeat Password:</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        
+          <label style="color: white;"><b>Płeć:</b></label><br>
+          <label for="plec-m" style="color: white;"><b>Mężczyzna</b></label>
+          <div class="checkbox-container"><input type="radio" name="plec" value="mężczyzna" id="plec-m" required></div>
+          
+          <label for="plec-k" style="color: white;"><b>Kobieta</b></label><br>
+          <div class="checkbox-container"><input type="radio" name="plec" value="kobieta" id="plec-k" required></div>
+          
+          
+          <label style="color: white;"><b>Wiek:</b></label><br>
+          <input type="number" name="wiek" id="wiek" required><br>
+          
+          <label style="color: white;"><b>Atrakcje:</b></label>
+          <div class="checkbox-container">
+            <input type="checkbox" name="atrakcje" value="hyperion" id="atrakcja-h" required>
+            <label for="atrakcja-h" style="color: white;"><b>Hyperion</b></label>
+          </div>
+
+          <div class="checkbox-container">
+            <input type="checkbox" name="atrakcje" value="zadra" id="atrakcja-z" required>
+            <label for="atrakcja-z" style="color: white;"><b>Zadra</b></label>
+          </div>
+
+          <div class="checkbox-container">
+            <input type="checkbox" name="atrakcje" value="mayan" id="atrakcja-m" required>
+            <label for="atrakcja-m" style="color: white;"><b>Mayan</b></label>
+          </div>
+
+          <div class="checkbox-container">
+            <input type="checkbox" name="atrakcje" value="abyssus" id="atrakcja-a" required>
+            <label for="atrakcja-a" style="color: white;"><b>Abyssus</b></label>
+          </div>
+
+          <div class="textarea-conteiner">
+          <label style="color: white;"><b>Inne:</b></label>
+          <input type="textarea" placeholder="Enter text here...">
+          </div>
+          
+          <div class="select-container">
+            <label for="cars" style="color: white;"><b>Co chcesz zjeść:</b></label><br>
+            <select name="jedzenie" id="jedzenie">
+            <option value="pizza">pizza</option>
+            <option value="burger">burger</option>
+            </select>
+          </div>
+
+          <p style="color: white;"><b>By creating an account you agree to our</b> <a href="#"><b>Terms & Privacy</b></a>.</p>
+          <button type="submit" class="registerbtn"><b>Register</b></button>
+
+          <div class="container signin">
+          <p style="color: white;"><b>Already have an account?</b> <a href="#"><b>Sign in</b></a>.</p>
+    </div>
+        
+</body>
+</html>
